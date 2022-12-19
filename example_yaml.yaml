@@ -1,0 +1,14 @@
+ - doc: "Book1"
+   reviews:
+     - reviewer: "Paul"
+       stars: "5"
+     - reviewer: "Sam"
+       stars: "2"
+ - doc: "Book2"
+   reviews:
+     - reviewer: "John"
+       stars: "4"
+     - reviewer: "Sam"
+       stars: "3"
+     - reviewer: "Pete"
+       stars: "2"
