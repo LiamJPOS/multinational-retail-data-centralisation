@@ -1,5 +1,6 @@
 
 import json 
+import yaml
 '''
     Open a text editor and create a JSON file which contains
     a key called "dates_visited", which is a list of strings of dates in ISO format (look it up)
@@ -19,9 +20,16 @@ x = {'dates_visited' : ['2022-12-28', '2023-01-02'],
                  {'price' : 44.00,
                   'id' : '453cb74f-cbc6-4e5f-8690-3e1bd29ab8da', 
                   'name' : 'ASOS DESIGN oversized wool mix overcoat in grey'}]}
-
+'''
 with open('json_practical.json', mode = 'w') as f:
     json.dump(x, f)
+'''
+with open('json_practical.json', mode = 'r') as f:
+    x = json.load(f)
+print(x)
+
+with open('yaml_practical.yaml', 'w') as f:
+    yaml.dump(x, f)
 
 
 
